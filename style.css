@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  width: 100%;
+  overflow-x: hidden; 
+  scroll-behavior: auto;
+}
+
+body{
+  background-color: #222;
+}
+.card{
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 50px auto 0 auto ;
+  border-radius: 20px;
+  padding: 4rem 3.5rem;
+  text-align: center;
+}
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 1rem 2.5rem;
+  height: 6rem;
+  border-radius: 3rem;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 1.8rem;
+}
+.search button{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.search button img{
+  width: 1.6rem;
+}
+.weather-icon{
+  width: 17rem;
+  margin-top: 3rem;
+}
+.weather h1{
+  font-size: 8rem;
+  font-weight: 500;
+}
+.weather h2{
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-top: -1rem;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 2rem;
+  margin-top: 5rem
+}
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img{
+  width: 4rem;
+  margin-right: 1rem;
+}
+.humidity, .wind{
+  font-size: 2.8rem;
+}
+.weather{
+  display: none;
+}
+.error{
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  display: none;
+}
+
+/* MOBILE RESPONSIVE LAYOUT */
+
+@media (max-width: 425px) {
+  
+  .card {
+    width: 92%;
+    padding: 3rem 2rem; 
+    margin-top: 30px; 
+  }
+
+  .search input {
+    padding: 1rem 1.8rem; 
+    height: 5.2rem; 
+    font-size: 1.6rem; 
+    margin-right: 10px; 
+  }
+
+  .search button {
+    width: 5.2rem; 
+    height: 5.2rem;
+  }
+
+  .weather-icon {
+    width: 14rem; 
+    margin-top: 2rem;
+  }
+
+  .weather h1 {
+    font-size: 6rem; 
+  }
+
+  .weather h2 {
+    font-size: 3.5rem;
+  }
+
+  .details {
+    padding: 0; 
+    margin-top: 4rem;
+    gap: 1.5rem; 
+  }
+
+  .col img {
+    width: 3.2rem; 
+    margin-right: 0.8rem;
+  }
+
+  .humidity, .wind {
+    font-size: 2rem; 
+  }
+
+  .col p {
+    font-size: 1.3rem; 
+  }
+}
